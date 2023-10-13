@@ -1,5 +1,11 @@
-<script setup lang='ts'>
+<script setup lang="ts">
 const { count, inc, dec } = useCount()
+const emit = defineEmits([
+  'onProgress',
+  'onComplete',
+  'onScroll',
+  'onPageChange',
+])
 </script>
 
 <template>

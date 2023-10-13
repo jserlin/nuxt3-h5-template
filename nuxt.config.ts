@@ -45,8 +45,13 @@ export default defineNuxtConfig({
 
   nitro: {
     devProxy: {
-      '/apiTarget': {
-        target: 'http://127.0.0.1:8907', // 这里是接口地址
+      '/platformapi': {
+        target: 'http://192.168.103.245:30119', // 这里是接口地址
+        changeOrigin: true,
+        // prependPath: true,
+      },
+      '/customerweb': {
+        target: 'http://192.168.103.245:30119/customerweb', // 这里是接口地址
         changeOrigin: true,
         // prependPath: true,
       },

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { appName } from '~/constants'
 
 useHead({
@@ -7,14 +7,16 @@ useHead({
 </script>
 
 <template>
-  <VitePwaManifest />
+  <!-- <VitePwaManifest /> -->
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 </template>
 
 <style>
-html, body , #__nuxt{
+html,
+body,
+#__nuxt {
   height: 100vh;
   margin: 0;
   padding: 0;
